@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-border bg-background px-10 py-12">
+    <footer className="border-t border-border bg-background px-4 py-8 sm:px-6 lg:px-10">
       <div className="mx-auto max-w-[1200px]">
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-4 text-white">
               <div className="size-4">
@@ -54,11 +54,11 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 flex items-center justify-between border-t border-border pt-8">
+        <div className="mt-8 flex flex-col gap-4 border-t border-border pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-text-secondary text-sm">
             © 2024 AI BizBoost. Todos los derechos reservados.
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-4 sm:gap-6">
             <Link to="/privacidad" className="text-text-secondary text-sm hover:text-white">Política de Privacidad</Link>
             <Link to="/terminos" className="text-text-secondary text-sm hover:text-white">Términos y Condiciones</Link>
           </div>

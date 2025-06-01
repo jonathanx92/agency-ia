@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-border px-10 py-3">
+    <header className="relative flex items-center justify-between whitespace-nowrap border-b border-solid border-border px-4 py-3 sm:px-6 lg:px-10">
       <div className="flex items-center gap-4 text-white">
         <div className="size-4">
           <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,15 +19,34 @@ export const Header = () => {
         </div>
         <h2 className="text-white text-lg font-bold leading-tight tracking-[-0.015em]">AI BizBoost</h2>
       </div>
-      <div className="flex flex-1 justify-end gap-8">
-        <div className="flex items-center gap-9">
+
+      <button 
+        className="lg:hidden text-white p-2"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        aria-label="Toggle menu"
+      >
+        <svg 
+          className="size-6" 
+          fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24"
+        >
+          {isMenuOpen ? (
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          ) : (
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          )}
+        </svg>
+      </button>
+
+      <div className={`absolute left-0 right-0 top-full z-50 flex flex-col gap-4 border-b border-border bg-background p-4 lg:static lg:flex lg:flex-row lg:items-center lg:justify-end lg:gap-8 lg:border-0 lg:p-0 ${isMenuOpen ? 'block' : 'hidden'}`}>
+        <nav className="flex flex-col gap-4 lg:flex-row lg:items-center">
           <Link to="/" className="nav-link">Inicio</Link>
           <Link to="/servicios" className="nav-link">Servicios</Link>
           <Link to="/sobre-nosotros" className="nav-link">Sobre Nosotros</Link>
-          {/* <Link to="/recursos" className="nav-link">Recursos</Link> */}
           <Link to="/contacto" className="nav-link">Contacto</Link>
-        </div>
-        <button className="btn">
+        </nav>
+        <button className="btn w-full lg:w-auto">
           <span className="truncate">Comienza hoy</span>
         </button>
       </div>

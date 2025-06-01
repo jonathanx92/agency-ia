@@ -4,74 +4,77 @@ export const ServicesPage = () => {
       <div className="@container">
         <div className="@[480px]:p-4">
           <div
-            className="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
+            className="flex min-h-[320px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:min-h-[400px] @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-8 @[480px]:px-10 @[480px]:pb-10 @[864px]:min-h-[480px]"
             style={{
               backgroundImage:
-                'linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCvNhz95-Siwy7mN5dhALYJO4p1ZlsHoKPtoPaqaRgOSSCU8JlvBed2qN9Ae_dkRamn4cJDfBr5xfBXG8a0O-EQQvaAtPKZglRru0lXlc6xyYWa1FwXcFBDsZQMXPEgd3pfcCjUJpeYnk4D23zP6oa1NnORcwmCDfGpbZK0r8dOtnNP6X5JoNDLVU7cNFRcZi4VBULE-IDBUwVXGP9HMaP3l-u_IOQ4RBRSnfgoPalUINYh2QgIZArlOQN2zKUfKRuzcRjAvygpNfXp")',
+                'linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop")',
             }}
           >
             <div className="flex flex-col gap-2 text-left">
-              <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
-                Automatiza tu negocio y libera tu tiempo
+              <h1 className="text-white text-3xl font-black leading-tight tracking-[-0.033em] @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] @[864px]:text-5xl">
+                Soluciones de IA para tu negocio
               </h1>
               <h2 className="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                Implementamos soluciones de automatización e inteligencia artificial para pequeños negocios, optimizando procesos y mejorando la eficiencia.
+                Descubre cómo nuestras soluciones de inteligencia artificial pueden transformar tu negocio y aumentar tu productividad.
               </h2>
             </div>
             <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-accent text-background text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-accent/90 transition-colors">
-              <span className="truncate">Solicitar Demo</span>
+              <span className="truncate">Solicita una demo</span>
             </button>
           </div>
         </div>
       </div>
 
-      <h2 className="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Nuestros Servicios</h2>
-      <div className="flex flex-col gap-10 px-4 py-10 @container">
+      <h2 className="text-white text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 @[480px]:text-[22px]">Nuestros Servicios</h2>
+      <div className="flex flex-col gap-10 px-4 py-8 @container @[480px]:py-10">
         <div className="flex flex-col gap-4">
-          <h1 className="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+          <h1 className="text-white tracking-light text-2xl font-bold leading-tight @[480px]:text-3xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] @[864px]:text-4xl max-w-[720px]">
             Soluciones a medida para tu negocio
           </h1>
-          <p className="text-white text-base font-normal leading-normal max-w-[720px]">
+          <p className="text-white text-sm font-normal leading-normal @[480px]:text-base max-w-[720px]">
             Ofrecemos una gama de servicios diseñados para automatizar tareas repetitivas y mejorar la toma de decisiones.
           </p>
         </div>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
-          <div className="flex flex-1 gap-3 rounded-lg border border-[#4d4d4d] bg-neutral-800 p-4 flex-col hover:border-accent transition-colors">
+
+        <div className="grid grid-cols-1 gap-6 @[480px]:grid-cols-2 @[864px]:grid-cols-3">
+          <div className="flex flex-col gap-4 rounded-lg border border-[#4d4d4d] bg-neutral-800 p-6 hover:border-accent transition-colors">
             <div className="text-accent">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.49C39.74,56.83,78.26,17.14,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.65,71.65,0,0,0,27.64,56.3A32,32,0,0,1,96,186v6h64v-6a32.15,32.15,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Zm-16.11-9.34a57.6,57.6,0,0,0-46.56-46.55,8,8,0,0,0-2.66,15.78c16.57,2.79,30.63,16.85,33.44,33.45A8,8,0,0,0,176,104a9,9,0,0,0,1.35-.11A8,8,0,0,0,183.89,94.66Z" />
               </svg>
             </div>
-            <div className="flex flex-col gap-1">
-              <h2 className="text-white text-base font-bold leading-tight">Gestión de Citas Automatizada</h2>
-              <p className="text-[#adadad] text-sm font-normal leading-normal">
-                Automatiza la programación de citas, reduciendo los tiempos de espera y mejorando la experiencia del cliente.
+            <div className="flex flex-col gap-2">
+              <h2 className="text-white text-xl font-bold leading-tight">Automatización Inteligente</h2>
+              <p className="text-[#adadad] text-sm font-normal leading-normal @[480px]:text-base">
+                Automatiza tareas repetitivas y optimiza tus procesos de negocio con IA avanzada.
               </p>
             </div>
           </div>
 
-          <div className="flex flex-1 gap-3 rounded-lg border border-[#4d4d4d] bg-neutral-800 p-4 flex-col hover:border-accent transition-colors">
+          <div className="flex flex-col gap-4 rounded-lg border border-[#4d4d4d] bg-neutral-800 p-6 hover:border-accent transition-colors">
             <div className="text-accent">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z" />
               </svg>
             </div>
-            <div className="flex flex-col gap-1">
-              <h2 className="text-white text-base font-bold leading-tight">Atención al Cliente Automatizada</h2>
-              <p className="text-[#adadad] text-sm font-normal leading-normal">Implementa chatbots inteligentes para responder preguntas frecuentes y brindar soporte 24/7.</p>
+            <div className="flex flex-col gap-2">
+              <h2 className="text-white text-xl font-bold leading-tight">Chatbots IA</h2>
+              <p className="text-[#adadad] text-sm font-normal leading-normal @[480px]:text-base">
+                Atiende a tus clientes 24/7 con chatbots inteligentes que entienden y resuelven sus consultas.
+              </p>
             </div>
           </div>
 
-          <div className="flex flex-1 gap-3 rounded-lg border border-[#4d4d4d] bg-neutral-800 p-4 flex-col hover:border-accent transition-colors">
+          <div className="flex flex-col gap-4 rounded-lg border border-[#4d4d4d] bg-neutral-800 p-6 hover:border-accent transition-colors">
             <div className="text-accent">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176ZM104,120v24a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32-16v40a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32-16v56a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z" />
               </svg>
             </div>
-            <div className="flex flex-col gap-1">
-              <h2 className="text-white text-base font-bold leading-tight">Análisis de Datos y Reportes</h2>
-              <p className="text-[#adadad] text-sm font-normal leading-normal">
-                Obtén insights valiosos a través del análisis de datos, optimizando tus estrategias y mejorando la rentabilidad.
+            <div className="flex flex-col gap-2">
+              <h2 className="text-white text-xl font-bold leading-tight">Análisis Predictivo</h2>
+              <p className="text-[#adadad] text-sm font-normal leading-normal @[480px]:text-base">
+                Anticipa tendencias y toma decisiones basadas en datos con nuestro análisis predictivo.
               </p>
             </div>
           </div>

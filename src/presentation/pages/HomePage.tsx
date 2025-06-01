@@ -4,11 +4,19 @@ export const HomePage = () => {
       <div className="@container">
         <div className="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row">
           <div
-            className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full"
+            className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full relative overflow-hidden group"
             style={{
-              backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdjmPZJNwg2FQk9kzoxG8Qc3rswlLYWBRvfuLQ9cC-ZW7OMnUjLmsdwU7PZRze_NqgVGHzu7HRiWoD61ABkSQt2iPVWavJN9gB7t3nZkb9DXvy-GTP-8YuN90xyrGSMG6x7CiEhOHkvWItkOuG3XDyrg8XF6tyIxKka2qYPyzpe_CIjmZyIW0gqemeBQbHM_vtEEpqwciVtw3w6xfuvfB6dx8acw6BxBQXPZfqx6h2EUWF0RLOmNKREz4vEu7Jb_pIsv3m8z8oxWpd")'
+              backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop")'
             }}
-          />
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/50 to-transparent" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-accent/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="bg-background/90 backdrop-blur-sm rounded-lg p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <p className="text-white text-sm font-medium">Ver cómo funciona →</p>
+              </div>
+            </div>
+          </div>
           <div className="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
             <div className="flex flex-col gap-2 text-left">
               <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">

@@ -86,7 +86,10 @@ export const ServicesPage = () => {
           <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accent text-background text-sm font-bold leading-normal tracking-[0.015em] grow hover:bg-accent/90 transition-colors">
             <span className="truncate">Solicita tu demo gratis</span>
           </button>
-          <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#363636] text-white text-sm font-bold leading-normal tracking-[0.015em] grow hover:bg-[#404040] transition-colors">
+          <button
+            onClick={() => window.open('https://wa.me/34628506129', '_blank')}
+            className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#ffffff] text-black text-sm font-bold leading-normal tracking-[0.015em] grow hover:bg-gray-200 transition-colors"
+          >
             <span className="truncate">Contáctanos</span>
           </button>
         </div>

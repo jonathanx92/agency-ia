@@ -27,10 +27,10 @@ export const Footer = () => {
           <div className="flex flex-col gap-4">
             <h3 className="text-white text-sm font-semibold">Servicios</h3>
             <div className="flex flex-col gap-2">
-              <Link to="/servicios/automatizacion" className="text-text-secondary text-sm hover:text-white">Automatización</Link>
-              <Link to="/servicios/analisis" className="text-text-secondary text-sm hover:text-white">Análisis Predictivo</Link>
-              <Link to="/servicios/chatbots" className="text-text-secondary text-sm hover:text-white">Chatbots IA</Link>
-              <Link to="/servicios/optimizacion" className="text-text-secondary text-sm hover:text-white">Optimización SEO</Link>
+              <Link to="/servicios" className="text-text-secondary text-sm hover:text-white">Automatización</Link>
+              <Link to="/servicios" className="text-text-secondary text-sm hover:text-white">Análisis Predictivo</Link>
+              <Link to="/servicios" className="text-text-secondary text-sm hover:text-white">Chatbots IA</Link>
+              <Link to="/servicios" className="text-text-secondary text-sm hover:text-white">Optimización SEO</Link>
             </div>
           </div>
 
@@ -39,7 +39,6 @@ export const Footer = () => {
             <div className="flex flex-col gap-2">
               <Link to="/sobre-nosotros" className="text-text-secondary text-sm hover:text-white">Sobre Nosotros</Link>
               <Link to="/casos-de-exito" className="text-text-secondary text-sm hover:text-white">Casos de Éxito</Link>
-              <Link to="/blog" className="text-text-secondary text-sm hover:text-white">Blog</Link>
               <Link to="/contacto" className="text-text-secondary text-sm hover:text-white">Contacto</Link>
             </div>
           </div>
@@ -48,7 +47,7 @@ export const Footer = () => {
             <h3 className="text-white text-sm font-semibold">Contacto</h3>
             <div className="flex flex-col gap-2 text-text-secondary text-sm">
               <p>info@aibizboost.com</p>
-              <p>+34 900 123 456</p>
+              <p>+34 628 506 129</p>
               <p>Madrid, España</p>
             </div>
           </div>

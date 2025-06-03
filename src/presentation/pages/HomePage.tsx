@@ -29,7 +29,14 @@ export const HomePage = () => {
               </h2>
             </div>
             <button className="flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 sm:h-12 px-4 sm:px-5 bg-accent text-background text-sm sm:text-base font-bold leading-normal tracking-[0.015em] hover:bg-accent/90 transition-colors">
-              <span className="truncate">Comienza hoy</span>
+              <a
+                href="https://wa.me/34628506129"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 sm:h-12 px-4 sm:px-5 bg-accent text-background text-sm sm:text-base font-bold leading-normal tracking-[0.015em] hover:bg-accent/90 transition-colors"
+              >
+                <span className="truncate">Contáctanos</span>
+              </a>
             </button>
           </div>
         </div>

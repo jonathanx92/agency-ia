@@ -47,7 +47,14 @@ export const Header = () => {
           <Link to="/contacto" className="nav-link">Contacto</Link>
         </nav>
         <button className="btn w-full lg:w-auto">
+          <a 
+          href="https://wa.me/34628506129" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="btn w-full lg:w-auto text-center"
+        >
           <span className="truncate">Comienza hoy</span>
+        </a>
         </button>
       </div>
     </header>
